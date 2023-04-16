@@ -12,7 +12,11 @@ export default function Experience({ experiences }) {
       <h3 className="uppercase text-2xl absolute top-20 text-gray-500 tracking-[20px]">
         Experience
       </h3>
-      <div className="flex flex-row overflow-x-auto space-x-8 py-20 px-10 snap-x snap-mandatory">
+      <div
+        className="flex flex-row overflow-x-auto space-x-8
+      scrollbar-thin scrollbar-thumb-green-900 scrollbar-track-green-100
+       py-20 px-10 snap-x snap-mandatory"
+      >
         {experiences?.map((experience) => (
           <ExperienceCard experience={experience} />
         ))}
