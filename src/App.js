@@ -9,13 +9,20 @@ import Contact from './component/contact/Contact';
 import ToolBar from './component/others/ToolBar';
 import { useEffect, useState } from 'react';
 import { fetData } from './api/Api';
+import Loading from './component/others/Loading';
 
 export default function App() {
   // fetch data
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
   const getLinks = async () => {
-    const data = await fetData();
-    setData(data ? data[0] : {});
+    try {
+      setLoading(true);
+      const data = await fetData();
+      setData(data ? data[0] : {});
+    } finally {
+      setLoading(false);
+    }
   };
   useEffect(() => {
     getLinks();
@@ -29,6 +36,7 @@ export default function App() {
     scrollbar-thin scrollbar-thumb-green-900 scrollbar-track-green-100
     "
     >
+      <Loading loading={loading} />
       <Header links={data?.links} />
       <section id="hero" className="snap-center">
         <Hero
