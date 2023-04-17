@@ -38,7 +38,13 @@ export default function ProjectCard({ project }) {
           ))}
         </ul>
       </div>
-      <div className="flex flex-row flex-wrap space-x-3">
+      <div
+        className="flex flex-row 
+      overflow-auto  
+      scrollbar-thin scrollbar-thumb-green-900 scrollbar-track-green-100 
+      p-3
+       space-x-3"
+      >
         {project?.skiils?.map((skill) => (
           <SkillCard skill={skill} />
         ))}

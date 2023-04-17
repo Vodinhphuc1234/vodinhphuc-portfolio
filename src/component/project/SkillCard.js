@@ -12,7 +12,9 @@ export default function SkillCard({ skill }) {
       transition-all duration-200
       "
       >
-        <div className="absolute top-[40%] left-0 right-0">{skill?.name}</div>
+        <div className="absolute h-full w-full flex justify-center items-center">
+          {skill?.name}
+        </div>
       </div>
       <img
         className=" rounded-full p-1 border border-gray-600 h-14 w-14 object-cover"

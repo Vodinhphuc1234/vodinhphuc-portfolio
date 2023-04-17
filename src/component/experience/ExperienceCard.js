@@ -39,7 +39,11 @@ export default function ExperienceCard({ experience }) {
           ))}
         </ul>
       </div>
-      <div className="flex space-x-3 overflow-auto p-3">
+      <div
+        className="flex space-x-3 overflow-auto  
+      scrollbar-thin scrollbar-thumb-green-900 scrollbar-track-green-100 
+      p-3"
+      >
         {experience?.skills?.map((skill) => (
           <img
             key={skill?.name}
