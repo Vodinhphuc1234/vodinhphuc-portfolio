@@ -45,7 +45,7 @@ export default function Hero({ avatar, role, loopSentences }) {
           <a href="#experience">
             <button className="heroButton">Experience</button>
           </a>
-          <a href="#skills">
+          <a href="#skill">
             <button className="heroButton">Skills</button>
           </a>
           <a href="#project">

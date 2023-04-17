@@ -4,6 +4,7 @@ import {
   FaBriefcase,
   FaCode,
   FaFolder,
+  FaHome,
   FaPhoneVolume,
 } from 'react-icons/fa';
 
@@ -14,6 +15,14 @@ export default function ToolBar() {
     max-w-fit mx-auto
     flex flex-row items-center"
     >
+      <a href="#hero">
+        <button className="heroButton flex items-center space-x-2">
+          <div>
+            <FaHome />
+          </div>
+          <div className="hidden lg:inline-flex">Home</div>
+        </button>
+      </a>
       <a href="#about">
         <button className="heroButton flex items-center space-x-2">
           <div>
@@ -30,7 +39,7 @@ export default function ToolBar() {
           <div className="hidden lg:inline-flex">Experience</div>
         </button>
       </a>
-      <a href="#skills">
+      <a href="#skill">
         <button className="heroButton flex items-center space-x-2">
           <div>
             <FaCode />
