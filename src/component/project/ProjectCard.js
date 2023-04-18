@@ -28,11 +28,14 @@ export default function ProjectCard({ project }) {
         <ul class="list-disc ps-6 space-y-2">
           {project?.links?.map((link) => (
             <li>
-              <a target="_blank" href={link?.link} rel="noreferrer">
-                <div className="flex space-x-2 items-center">
-                  <div>{link?.name}</div>
-                  <FaLink />
-                </div>
+              <a
+                target="_blank"
+                href={link?.link}
+                rel="noreferrer"
+                className="flex space-x-2 items-center"
+              >
+                <div>{link?.name}</div>
+                <FaLink />
               </a>
             </li>
           ))}
