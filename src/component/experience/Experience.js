@@ -1,5 +1,5 @@
-import React from 'react';
-import ExperienceCard from './ExperienceCard';
+import React from "react";
+import ExperienceCard from "./ExperienceCard";
 
 export default function Experience({ experiences }) {
   return (
@@ -10,7 +10,7 @@ export default function Experience({ experiences }) {
     relative max-w-7xl mx-auto"
     >
       <h3 className="uppercase text-2xl absolute top-20 text-gray-500 tracking-[20px]">
-        Experience
+        Experiences
       </h3>
       <div
         className="flex flex-row overflow-x-auto space-x-8

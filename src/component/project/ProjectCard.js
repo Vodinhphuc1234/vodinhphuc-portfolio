@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion';
-import React from 'react';
-import { FaLink } from 'react-icons/fa';
-import SkillCard from './SkillCard';
+import { motion } from "framer-motion";
+import React from "react";
+import { FaLink } from "react-icons/fa";
+import SkillCard from "./SkillCard";
 export default function ProjectCard({ project }) {
   return (
     <div
-      className="bg-[#29292929] w-[350px] lg:w-[500px] px-10 py-3 rounded-md 
+      className="bg-[#504f4f29] w-[350px] lg:w-[500px] px-10 py-3 rounded-md 
     flex flex-col flex-shrink-0 
     items-center space-y-4 snap-center
     opacity-60 hover:opacity-100 hover:scale-110 transition-all duration-300"

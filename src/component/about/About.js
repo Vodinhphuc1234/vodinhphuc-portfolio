@@ -1,9 +1,9 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 export default function About({ avatar, introductions }) {
   return (
-    <div className="h-screen flex text-center flex-col justify-center items-center relative max-w-7xl mx-auto md:flex-row">
+    <div className="h-screen flex flex-col justify-center items-center relative max-w-7xl mx-auto md:flex-row">
       <h3 className="uppercase text-2xl absolute top-20 text-gray-500 tracking-[20px]">
         About
       </h3>
@@ -39,17 +39,11 @@ export default function About({ avatar, introductions }) {
         }}
         className="m-5 text-gray-300 flex flex-col justify-between"
       >
-        <h2 className="text-center uppercase text-4xl font-semibold mb-5">
-          Introduce myself
-        </h2>
-        <div className="text-sm md:text-md lg:text-lg">
-          {introductions?.map((introduction) => (
-            <>
-              {introduction}
-              <br />
-            </>
-          ))}
-        </div>
+        {introductions?.map((introduction) => (
+          <p className="text-sm md:text-md lg:text-lg text-justify mb-3">
+            {introduction}
+          </p>
+        ))}
       </motion.div>
     </div>
   );

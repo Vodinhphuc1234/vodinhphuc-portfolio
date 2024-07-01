@@ -1,15 +1,15 @@
-import { motion } from 'framer-motion';
-import Header from './component/others/Header';
-import Hero from './component/hero/Hero';
-import About from './component/about/About';
-import Experience from './component/experience/Experience';
-import Skill from './component/skill/Skill';
-import Project from './component/project/Project';
-import Contact from './component/contact/Contact';
-import ToolBar from './component/others/ToolBar';
-import { useEffect, useState } from 'react';
-import { fetData } from './api/Api';
-import Loading from './component/others/Loading';
+import { motion } from "framer-motion";
+import Header from "./component/others/Header";
+import Hero from "./component/hero/Hero";
+import About from "./component/about/About";
+import Experience from "./component/experience/Experience";
+import Skill from "./component/skill/Skill";
+import Project from "./component/project/Project";
+import Contact from "./component/contact/Contact";
+import ToolBar from "./component/others/ToolBar";
+import { useEffect, useState } from "react";
+import { fetData } from "./api/Api";
+import Loading from "./component/others/Loading";
 
 export default function App() {
   // fetch data

@@ -1,6 +1,6 @@
-import React from 'react';
-import { SocialIcon } from 'react-social-icons';
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import React from "react";
+import { SocialIcon } from "react-social-icons";
 
 export default function Header({ links }) {
   console.log(links);
@@ -40,12 +40,26 @@ export default function Header({ links }) {
         transition={{
           duration: 1.5,
         }}
-        className="flex flex-row items-center text-gray-400 cursor-pointer"
+        className="flex flex-row items-center"
       >
-        <SocialIcon network="email" fgColor="gray" bgColor="transparent" />
-        <p className="uppercase hidden md:inline-flex text-gray-400">
-          Get in touch
-        </p>
+        <a
+          href="mailto:dinhphuc20092001@gmail.com"
+          className="flex flex-row items-center text-gray-400 cursor-pointer"
+        >
+          <SocialIcon network="email" fgColor="gray" bgColor="transparent" />
+          <p className="uppercase hidden md:inline-flex text-gray-400">
+            Get in touch
+          </p>
+        </a>
+        <a
+          href="https://drive.google.com/drive/folders/1OicT6njDsH5pqP8wmOpbSPgwpgDHHC0w?usp=sharing"
+          className="flex flex-row items-center text-gray-400 cursor-pointer"
+        >
+          <SocialIcon network="" fgColor="gray" bgColor="transparent" />
+          <p className="uppercase hidden md:inline-flex text-gray-400">
+            Visit my CV
+          </p>
+        </a>
       </motion.div>
     </header>
   );
